@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    /* font gevonden op http://www.onlinewebfonts.com */
+    font-family: coffee-with-sugar;
+    src: url("../font/Coffee with Sugar.woff");
+}
+
+body {
+    background-color: #763300;
+    font-family: Calibri, sans-serif;
+    line-height: 1.4;
+    font-size: 1.1em;
+}
+
+.container {
+    background-color: #d7b787;
+    padding: 1em;
+}
+
+.container h1 {
+    background-image: url("../img/banner.png");
+    padding: 1em;
+}
+
+footer .container {
+    background-image: url("../img/banner.png");
+    color: #fff;
+    text-align: center;
+    padding: 2em;
+}
+
+h1, h2, nav {
+    font-family: coffee-with-sugar, sans-serif;
+    line-height: 1.5;
+    clear: both;
+    /*font-variant: small-caps;*/
+}
+
+header .container {
+    padding: 0;
+}
+
+h1 {
+    font-size: 3.5em;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+/* navigatie */
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: center;
+}
+
+nav ul li {
+    width: 100%;
+    font-size: 1.3em;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul li a:hover,
+nav ul li a#hier:hover {
+    background-color: #763300;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li strong {
+    font-variant: small-caps;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+nav ul li a#hier {
+    background-color: #763300;
+    color: #fff;
+}
+/* einde navigatie */
+
+main, footer {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+main p {
+    padding: 1em 0;
+}
+
+/* quote */
+figure {
+    border: #763300 solid;
+    width: 90%;
+    font-size: 1.5em;
+    margin: auto;
+}
+
+figcaption {
+    padding-left: 5em;
+}
+
+figure p {
+    line-height: 1;
+    padding: 0.5em;
+}
+/* einde quote */
+
+.gekozenKoffie {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #763300;
+}
+
+label {
+    display: inline-block;
+    width: 140px;
+    text-align: right;
+}
+
+/* tabel */
+table {
+    border: solid 3px #000;
+}
+
+th, td {
+    text-align: left;
+    padding: 0.5rem;
+    border: solid 1px #000;
+}
+/* einde tabel */
+
+.verplicht {
+    color: red;
+}
+
+.gevondenKoffie {
+    margin-left: 3em;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    /* controleert breedte van scherm */
+    .container {
+        min-width: 900px;
+        width: 70%;
+        margin: auto;
+    }
+
+    nav ul {
+        flex-direction: row;
+        text-align: center;
+        justify-content: flex-start;
+        max-width: 60%;
+    }
+
+    /* quote */
+    figure {
+        margin: unset;
+        padding-left: 2em;
+        width: 70%;
+        font-size: 2em;
+    }
+    /* einde quote */
+
+}
